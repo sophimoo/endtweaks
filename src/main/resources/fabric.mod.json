@@ -1,33 +1,22 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "endtweaks",
 	"version": "${version}",
-	"name": "Example Mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "End Tweaks",
+	"description": "Server-side tweaks for the End. Adds the endtweaks:dragon_respawn_pillars gamerule (respawn the dragon and its crystals without regenerating the obsidian pillars, bedrock or cages) and the endtweaks:dragon_block_damage gamerule (stop the dragon from destroying blocks it flies through).",
 	"authors": [
-		"Me!"
+		"sophimoo"
 	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
-	"environment": "*",
+	"license": "GPL-3.0",
+	"icon": "assets/endtweaks/icon.png",
+	"environment": "server",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
-		],
-		"client": [
-			"com.example.client.ExampleModClient"
+			"com.endtweaks.EndTweaks"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
-		{
-			"config": "modid.client.mixins.json",
-			"environment": "client"
-		}
+		"endtweaks.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.19.5",

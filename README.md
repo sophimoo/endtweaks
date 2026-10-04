@@ -1,9 +1,12 @@
-# Example Mod
+# End Tweaks
 
-## Setup
+Server-side Fabric mod with configurable tweaks for the End fight.
 
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
+## Gamerules
+
+- `endtweaks:dragon_respawn_pillars` (default `false`) will only respawn end crystals when set to false
+- `endtweaks:dragon_block_damage` (default `false`) ender dragon will no longer destroy blocks when set to false
 
 ## License
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+GPL-3.0
